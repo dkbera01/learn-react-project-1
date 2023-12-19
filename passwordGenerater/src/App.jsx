@@ -23,6 +23,7 @@ function App() {
       pass += str.charAt(char);
     }
     setPassword(pass);
+    setCopyText("Copy");
   }, [length, numberAllowed, symbolAllowed, setCopyText, setPassword]);
 
   const copyPasswordToCLipBoard = useCallback(
@@ -36,8 +37,7 @@ function App() {
 
   useEffect(() => {
     passwordGenerator();
-    setCopyText("Copy");
-  }, [length, numberAllowed, symbolAllowed, setCopyText, passwordGenerator]);
+  }, [length, numberAllowed, symbolAllowed, passwordGenerator]);
 
   return (
     <div className="flex items-center justify-center px-2 md:px-0 h-screen">
