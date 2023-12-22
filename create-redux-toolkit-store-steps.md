@@ -16,7 +16,7 @@ export const store = configureStore({
 create src/features/todos/todoSlice.js
 
 ```bash
-	import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
   todos: [
